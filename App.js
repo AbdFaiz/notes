@@ -251,7 +251,7 @@ export default function App() {
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.headerRow}>
           <View>
-            <Text style={styles.welcomeText}>Secure Dashboard</Text>
+            <Text style={styles.welcomeText}>Dashboard</Text>
             <Text style={styles.sessionText}>Sesi Valid: {sessionTime}s</Text>
           </View>
           <TouchableOpacity
@@ -295,10 +295,10 @@ export default function App() {
         </View>
 
         <View style={styles.card}>
-          <Text style={styles.sectionTitle}>Tulis Catatan Rahasia</Text>
+          <Text style={styles.sectionTitle}>Tulis Catatan</Text>
           <TextInput
             style={[styles.input, { height: 60 }]}
-            placeholder="Ketik isi catatan/password rahasia di sini..."
+            placeholder="Ketik isi catatan di sini..."
             placeholderTextColor="#888"
             multiline={true}
             value={noteInput}
@@ -350,7 +350,7 @@ export default function App() {
             onPress={handleSaveData}
           >
             <Text style={styles.buttonText}>
-              Simpan Sebagai {isSecureMode ? "MODERN" : "PLAINTEXT"}
+              Simpan Sebagai {isSecureMode ? "Modern" : "Plaintext"}
             </Text>
           </TouchableOpacity>
         </View>
